@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazzini 136 - Caffetteria, Yogurteria, Gelateria e molto altro!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Carosello aggiornato */
+        .carousel {
+            width: 80%;
+            max-width: 400px;
+            height: 400px;
+            margin: 80px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+            border-radius: 50%;
+        }
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+        }
+
+        .contact-link {
+            color: white;  /* Imposta il colore del link su bianco */
+            text-decoration: underline; 
+            text-decoration-color: white;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;  /* Aggiunge la sottolineatura quando il link viene passato sopra */
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">Mazzini 136</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Chi Siamo</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="prodotti.html">Prodotti Speciali</a></li>
+                <li><a href="contact.html">Contatti</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Benvenuti da Mazzini 136</h1>
+        <p>Il luogo perfetto in cui ogni caffè, yogurt e gelato sono un viaggio di gusto. Vieni a scoprire il piacere in ogni cucchiaiata!</p>
+        <a href="menu.html" class="btn">Scopri il Menu</a>
+    </section>
+
+    <!-- Carosello di immagini aggiornato -->
+    <section class="carousel">
+        <button class="carousel-button prev">&#10094;</button>
+        <div class="carousel-track" id="carousel-track">
+            <img src="img/1.jpg" alt="Interni del locale">
+            <img src="img/2.jpg" alt="Yogurt artigianale">
+            <img src="img/3.jpg" alt="Gelato fatto in casa">
+            <img src="img/4.jpg" alt="Caffè">
+            <img src="img/5.jpg" alt="Dolci">
+            <img src="img/6.jpg" alt="Colazioni">
+            <img src="img/7.jpg" alt="Atmosfera">
+            <img src="img/10.jpg" alt="Drink e Aperitivi">
+            <img src="img/11.jpg" alt="Drink e Aperitivi">
+            <img src="img/12.jpg" alt="Drink e Aperitivi">
+            <img src="img/13.jpg" alt="Drink e Aperitivi">
+            <img src="img/14.jpg" alt="Drink e Aperitivi">
+            <img src="img/15.jpg" alt="Drink e Aperitivi">
+    
+    
+        </div>
+        <button class="carousel-button next">&#10095;</button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Chi Siamo</h2>
+        <p>Benvenuti da Mazzini 136, il nostro angolo di piacere dove ogni dettaglio è pensato per offrirti un'esperienza unica. Siamo un team giovane e appassionato, impegnato a portare nella tua giornata un sorriso, un caffè impeccabile, un gelato artigianale e yogurt fresco, tutto fatto con ingredienti selezionati di altissima qualità.
+
+            Ci trovi nel cuore di Corso Mazzini 136, un luogo dove la passione per il buon gusto e l'ospitalità si incontrano per darti il massimo del comfort. Ogni visita da noi è una piccola fuga dal quotidiano, un’occasione per rilassarti e gustare prodotti freschi, preparati con amore e creatività.
+            
+            La nostra missione? Offrirti un'esperienza indimenticabile, dove ogni morso e ogni sorso siano un momento di puro piacere.
+            
+            Vieni a trovarci, ti aspettiamo con un sorriso e tanto, tanto gusto!</p>
+        <div class="location">
+            <h3>La Nostra Sede</h3>
+            <p>Ci trovi su Corso Mazzini 136, vieni a trovarci!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contattaci</h2>
+        <p>Puoi contattarci tramite i vari canali che trovi nella sezione <a href="contact.html" class="contact-link">Contatti</a>!</p>
+    </section>
+
+    <footer>
+        <p>P. IVA 03730320789 - Tutti i diritti riservati &copy; 2025 Mazzini 136</p>
+    </footer>
+
+    <script>
+        const track = document.getElementById('carousel-track');
+        const prevButton = document.querySelector('.carousel-button.prev');
+        const nextButton = document.querySelector('.carousel-button.next');
+
+        let currentIndex = 0;
+        const slides = track.children;
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+                updateCarousel();
+            }
+        });
+    </script>
+</body>
+</html>

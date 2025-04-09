@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Mazzini 136</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            color: #FFD700;
+            font-size: 2.5rem;
+            font-style: italic;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #d4af37;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        section {
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #d4af37;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .menu-category {
+            margin-bottom: 40px;
+        }
+
+        .menu-category h3 {
+            font-size: 1.8rem;
+            color: #d4af37;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 5px;
+        }
+
+        .menu-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-category ul li {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .menu-category ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><i>Mazzini 136</i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="prodotti.html">Prodotti Speciali</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Il Nostro Menu</h2>
+
+        <!-- Caffetteria -->
+        <div class="menu-category">
+            <h3>Caffetteria</h3>
+            <ul>
+                <li>Caffè Espresso</li>
+                <li>Caffè Macchiato</li>
+                <li>Macchiatone</li>
+                <li>Marocchino</li>
+                <li>Caffè Corretto</li>
+                <li>Cappuccino</li>
+                <li>Cappuccino di Soia</li>
+                <li>Cappuccino Senza Lattosio</li>
+                <li>Latte</li>
+                <li>Latte Macchiato</li>
+                <li>Ginseng Dolce</li>
+                <li>Ginseng Amaro</li>
+                <li>Ginseng al Miele</li>
+                <li>Ginseng alla Liquirizia</li>
+                <li>Guaranà</li>
+                <li>Orzo</li>
+                <li>Mochaccino</li>
+                <li>Caffè Freddo</li>
+            </ul>
+        </div>
+
+        <!-- Bevande Calde e Fredde -->
+        <div class="menu-category">
+            <h3>Bevande Calde e Fredde</h3>
+            <ul>
+                <li>The</li>
+                <li>Tè Nero Earl Grey</li>
+                <li>Tè Nero English Breakfast</li>
+                <li>Tè Ceylon Supreme</li>
+                <li>Tè Nero Mango e Fragola</li>
+                <li>Tè Nero al Lampone</li>
+                <li>Tè Nero con Riber Nero</li>
+                <li>Tè Verde in purezza</li>
+                <li>Tè Verde con Menta Marocchina</li>
+                <li>Tè Verde con Fiori di Gelsomino</li>
+                <li>Tisane Natfood (Vari Gusti)</li>
+                <li>Camomilla</li>
+                <li>Infusi (Frutti di Bosco, Zenzero e Limone, Naturale, Bacche e Spezie)</li>
+                <li>Cioccolata Calda (Classica, Caramello, Biscotto, Nocciola, Cioccolato Bianco, Fondente, Extra Fondente) </li>
+                <li>Smoothie (frutta fresca, yogurt, gelato)</li>
+                <li>Frappè</li>
+                <li>Crema di Caffè</li>
+                <li>Succhi di Frutta</li>
+                <li>Limonata</li>
+                
+            </ul>
+        </div>
+
+        <!-- Gelati e yogurt -->
+        <div class="menu-category">
+            <h3>Yogurteria, Gelateria, Creperia, Cannoleria</h3>
+            <ul>
+                <li>Yogurt Piccolo</li>
+                <li>Yogurt Medio</li>
+                <li>Yogurt Grande</li>
+                <li>Cono Gelato</li>
+                <li>Coppetta Gelato (Piccola, Media, Grande)</li>
+                <li>Coppa in Vetro</li>
+                <li>Granita</li>
+                <li>Cannoli</li>
+                <li>Crepes</li>
+                <li>Pancake</li>
+            </ul>
+        </div>
+
+         <!-- Bibite -->
+         <div class="menu-category">
+            <h3>Bibite</h3>
+            <ul>
+                <li>Acqua Naturale o Frizzante</li>
+                <li>Cocktail San Pellegrino</li>
+                <li>Bitter (Bianco, Rosso)</li>
+                <li>Coca Cola</li>
+                <li>Coca Cola Zero</li>
+                <li>Sprite</li>
+                <li>Fanta</li>
+                <li>Crodino (Classico, Twist)</li>
+                <li>Campari Soda</li>
+                <li>Chinotto</li>
+                <li>Moka Drink</li>
+                <li>Limonata</li>
+                <li>Schweppes Lemon</li>
+                <li>Schweppes Tonica</li>
+                <li>RedBull</li>
+                <li>Estathé (Limone, Pesca)</li>
+                <li>Cedrata</li>
+            </ul>
+        </div>
+
+        <!-- Pasticceria -->
+        <div class="menu-category">
+            <h3>Pasticceria</h3>
+            <ul>
+                <li>Cornetto (Sfoglia, Brioches)</li>
+                <li>Cornetto Piccolo (vari gusti)</li>
+                <li>Girella (crema e gocce di cioccolato)</li>
+                <li>Brioche (Grande, Piccola)</li>
+                <li>Treccina al Burro</li>
+                <li>Treccina Noce e Miele</li>
+                <li>Pan Goccioli (Panini al latte con gocce di cioccolato)</li>
+                <li>Conchiglia (crema, crema e amarena, cioccolato)</li>
+                <li>Pasticciotti Leccesi (Crema e Amarena, Limoncello)</li>
+                <li>Muffin</li>
+                <li>Graffe</li>
+                <li>Krapfen</li>
+                <li>Mignon e Pasticcini</li>
+                <li>Biscotti Secchi</li>
+                <li>Biscotti al Burro</li>
+                <li>Crostatine</li>
+                <li>Tortini</li>
+                <li>Occhi di Bue</li>
+            </ul>
+        </div>
+
+        <!-- Bibite alcoliche -->
+        <div class="menu-category">
+            <h3>Drink e Liquori</h3>
+            <ul>
+                <li>Spritz</li>
+                <li>Negroni Spritz</li>
+                <li>Aperol Spritz</li>
+                <li>Green Spritz P31</li>
+                <li>Campari Spritz</li>
+                <li>Limoncello Spritz</li>
+                <li>Cocktail (Negroni, Gin Lemon, Gin Tonic, Mojito, Long Island, Sex on The Beach, Pina Colada, Vodka-Redbull, Martini, Cosmopolitan, Margarita)</li>
+                <li>Amaro (Silano, Del Capo, Jagermeister, Brancamenta, Fernet Branca, Unicum, Rupes, Braulio)</li>
+                <li>Birra (Bjorne, Leffe, Ichnusa non filtrata, Nastro Azzurro, Peroni, Heineken, Corona, Turborg, Birre Artigianali)  )</li>
+                <li>Liquirizia</li>
+                <li>Limoncello</li>
+                <li>Anice</li>
+                <li>Sambuca</li>
+                <li>Grappa</li>
+                <li>Whisky</li>
+            </ul>
+        </div>
+
+        <!-- Snack e Salati -->
+        <div class="menu-category">
+            <h3>Aperitivi e Sfiziosità</h3>
+            <ul>
+                <li>Aperitivo con Tris di Patatine, Noccioline e Olive</li>
+                <li>Aperitivo con Tagliere Misto</li>
+                <li>Pizzette</li>
+                <li>Rustici</li>
+                <li>Panzerottini, Polpette di Riso, Crocchette di Patate</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>P. IVA 03730320789 - Tutti i diritti riservati &copy; 2025 Mazzini 136</p>
+    </footer>
+</body>
+</html>
